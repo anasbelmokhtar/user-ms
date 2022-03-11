@@ -1,0 +1,31 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'software.aws.rds:aws-mysql-jdbc:1.0.0'
+    implementation 'org.springframework:spring-jdbc:5.3.16'
+    implementation 'org.springframework:spring-jdbc:5.3.16'
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+    implementation 'javax.mail:javax.mail-api:1.6.2'
+    implementation 'mysql:mysql-connector-java:8.0.28'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation group: 'org.springframework', name: 'spring-context-support', version: '5.1.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-mail:2.6.4'
+}
+
+test {
+    useJUnitPlatform()
+}
