@@ -1,4 +1,4 @@
-package com.algonquin.profile.dao;
+package com.algonquin.user.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

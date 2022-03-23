@@ -1,4 +1,4 @@
-package com.algonquin.profile.configuration;
+package com.algonquin.user.configuration;
 
 import java.util.Properties;
 

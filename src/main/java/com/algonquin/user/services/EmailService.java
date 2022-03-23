@@ -1,4 +1,4 @@
-package com.algonquin.profile.services;
+package com.algonquin.user.services;
 
 import java.io.UnsupportedEncodingException;
 
@@ -6,7 +6,7 @@ import javax.mail.MessagingException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import com.algonquin.profile.beans.Mail;
+import com.algonquin.user.beans.Mail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;

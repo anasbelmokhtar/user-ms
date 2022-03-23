@@ -1,18 +1,19 @@
-package com.algonquin.profile.controllers;
-import com.algonquin.profile.model.Credentials;
-import com.algonquin.profile.model.User;
-import com.algonquin.profile.services.UserService;
+package com.algonquin.user.controllers;
+
+import com.algonquin.user.model.Credentials;
+import com.algonquin.user.model.User;
+import com.algonquin.user.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
 
 @RestController
-public class ProfileController {
+public class UserController {
     @Autowired
     UserService userService;
 
-    public ProfileController(){
+    public UserController(){
 
     }
     @PostMapping("/recipe-book/registration")
@@ -31,5 +32,8 @@ public class ProfileController {
 
         return user;
     }
-
+    @PostMapping("/recipe-book/password-reset")
+    public int changePassword(@RequestBody Credentials cs) {
+        return userService.changePassword(cs);
+    }
 }

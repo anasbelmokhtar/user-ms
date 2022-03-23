@@ -1,4 +1,4 @@
-package com.algonquin.profile.beans;
+package com.algonquin.user.beans;
 
 import java.util.Date;
 import java.util.List;

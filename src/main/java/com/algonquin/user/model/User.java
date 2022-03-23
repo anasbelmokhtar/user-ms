@@ -1,4 +1,4 @@
-package com.algonquin.profile.model;
+package com.algonquin.user.model;
 
 import java.util.UUID;
 

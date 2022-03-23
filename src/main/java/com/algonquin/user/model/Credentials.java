@@ -1,4 +1,4 @@
-package com.algonquin.profile.model;
+package com.algonquin.user.model;
 
 public class Credentials {
     private String username;

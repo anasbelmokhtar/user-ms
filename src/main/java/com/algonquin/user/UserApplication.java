@@ -1,4 +1,4 @@
-package com.algonquin.profile;
+package com.algonquin.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan (basePackages = "com.algonquin")
 
-public class ProfileApplication {
+public class UserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProfileApplication.class, args);
+        SpringApplication.run(UserApplication.class, args);
     }
 
 }

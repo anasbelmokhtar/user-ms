@@ -1,9 +1,9 @@
-package com.algonquin.profile.services;
+package com.algonquin.user.services;
 
-import com.algonquin.profile.beans.Mail;
-import com.algonquin.profile.dao.UserDao;
-import com.algonquin.profile.model.Credentials;
-import com.algonquin.profile.model.User;
+import com.algonquin.user.beans.Mail;
+import com.algonquin.user.dao.UserDao;
+import com.algonquin.user.model.Credentials;
+import com.algonquin.user.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -49,5 +49,9 @@ public class UserService {
 
     public int validateUser(String token) {
         return userDao.validateUser(token);
+    }
+
+    public int changePassword(Credentials cs) {
+        return userDao.changePassword(cs);
     }
 }
