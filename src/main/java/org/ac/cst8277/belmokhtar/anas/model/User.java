@@ -1,8 +1,9 @@
-package com.algonquin.user.model;
+package org.ac.cst8277.belmokhtar.anas.model;
 
 import java.util.UUID;
 
 public class User {
+    private String UserId;
     private String username;
     private String firstName;
     private String lastName;
@@ -65,6 +66,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(String userId) {
+        UserId = userId;
     }
 
     @Override

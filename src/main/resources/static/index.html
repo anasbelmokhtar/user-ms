@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Demo</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <base href="/"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        function addRole(roles) { //<-- receive incoming array
+            let ul = document.getElementById("role-list"); //cache UL
+            for (i = 0; i < roles.length; i++) {
+                let role = document.createElement("LI");
+                role.textContent = roles[i];
+                ul.appendChild(role)
+            }
+        }
+
+    $.get("/user", function(data) {
+            $("#user").html(data.name);
+            $(".unauthenticated").hide()
+            $(".authenticated").show()
+        });
+
+
+        function getRoles(){
+            $.get("/twitter-like-app/roles", function(data) {
+                addRole(data);
+                console.log("clicked");
+                $(".unauthenticated").hide()
+                $(".authenticated").show()
+            })
+        };
+
+
+    </script>
+</head>
+<body>
+<h1>Demo</h1>
+<div class="container unauthenticated">
+    With GitHub: <a href="/oauth2/authorization/github">click here</a>
+</div>
+<div class="container authenticated" style="display:none">
+    Logged in as: <span id="user"></span>
+</div>
+<div class="container"></div>
+<div class="row">
+    <div class="col-xs-8">
+        <button class="btn-primary" onclick="javascript:getRoles()">Get roles</button>
+        <button class="btn btn-danger">Logout</button>
+        <ul class="details-table" id="role-list">
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+

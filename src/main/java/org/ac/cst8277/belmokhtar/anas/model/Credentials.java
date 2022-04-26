@@ -1,4 +1,4 @@
-package com.algonquin.user.model;
+package org.ac.cst8277.belmokhtar.anas.model;
 
 public class Credentials {
     private String username;

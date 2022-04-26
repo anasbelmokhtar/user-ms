@@ -1,4 +1,4 @@
-package com.algonquin.user.beans;
+package org.ac.cst8277.belmokhtar.anas.beans;
 
 import java.util.Date;
 import java.util.List;

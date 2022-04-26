@@ -1,4 +1,4 @@
-package com.algonquin.user.configuration;
+package org.ac.cst8277.belmokhtar.anas.configuration;
 
 import java.util.Properties;
 
