@@ -4,8 +4,7 @@ import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jwt.JWTClaimsSet;
 import org.ac.cst8277.belmokhtar.anas.beans.Mail;
-import org.ac.cst8277.belmokhtar.anas.repository.UserDao;
-import org.ac.cst8277.belmokhtar.anas.model.Credentials;
+import org.ac.cst8277.belmokhtar.anas.domain.Credentials;
 import org.ac.cst8277.belmokhtar.anas.model.User;
 import org.ac.cst8277.belmokhtar.anas.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +40,8 @@ public class UserServiceImpl implements UserService {
         //generate UUID
         u.setToken(UUID.randomUUID());
         //save to db
-        int result = userRepository.storeCredentials(u);
+        //TODO: Get storeCredentials() working again
+        //int result = userRepository.storeCredentials(u);
         //send email
         String textBody = "Thank you for signing up with us! click on this link to verify your email: " + "/" + u.getToken();
         String subject = "Email Verification";

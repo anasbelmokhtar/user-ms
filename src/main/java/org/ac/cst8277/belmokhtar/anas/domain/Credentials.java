@@ -1,4 +1,4 @@
-package org.ac.cst8277.belmokhtar.anas.model;
+package org.ac.cst8277.belmokhtar.anas.domain;
 
 public class Credentials {
     private String username;

@@ -1,6 +1,6 @@
 package org.ac.cst8277.belmokhtar.anas.services;
 
-import org.ac.cst8277.belmokhtar.anas.model.Credentials;
+import org.ac.cst8277.belmokhtar.anas.domain.Credentials;
 import org.ac.cst8277.belmokhtar.anas.model.User;
 
 import java.sql.SQLException;

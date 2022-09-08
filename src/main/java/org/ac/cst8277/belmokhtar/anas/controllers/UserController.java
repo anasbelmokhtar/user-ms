@@ -1,17 +1,12 @@
 package org.ac.cst8277.belmokhtar.anas.controllers;
 
-import org.ac.cst8277.belmokhtar.anas.model.Credentials;
+import org.ac.cst8277.belmokhtar.anas.domain.Credentials;
 import org.ac.cst8277.belmokhtar.anas.model.User;
 import org.ac.cst8277.belmokhtar.anas.services.UserService;
-import org.ac.cst8277.belmokhtar.anas.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.user.OAuth2User;
-import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.web.bind.annotation.*;
 import java.sql.SQLException;
 import java.util.Collections;
