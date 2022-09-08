@@ -1,4 +1,4 @@
-package org.ac.cst8277.belmokhtar.anas.dao;
+package org.ac.cst8277.belmokhtar.anas.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

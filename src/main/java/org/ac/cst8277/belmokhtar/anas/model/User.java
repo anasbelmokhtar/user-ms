@@ -1,16 +1,30 @@
 package org.ac.cst8277.belmokhtar.anas.model;
 
+import javax.persistence.*;
 import java.util.UUID;
 
+@Entity
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private String UserId;
+    @Column
     private String username;
+    @Column
     private String firstName;
+    @Column
     private String lastName;
+    @Column
     private String email;
+    @Column
     private String phone;
+    @Column
     private String password;
+    @Column
     private UUID token;
+    @Column
+    private String userStatus;
 
     public UUID getToken() {
         return token;

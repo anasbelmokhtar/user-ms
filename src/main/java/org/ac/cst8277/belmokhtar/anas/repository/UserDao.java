@@ -1,4 +1,4 @@
-package org.ac.cst8277.belmokhtar.anas.dao;
+package org.ac.cst8277.belmokhtar.anas.repository;
 
 import org.ac.cst8277.belmokhtar.anas.model.Credentials;
 import org.ac.cst8277.belmokhtar.anas.model.User;
